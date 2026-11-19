@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t="dark";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>搜索 · 南屿</title>
+<meta name="description" content="搜索站内文章。">
+<meta name="author" content="阿南">
+<meta name="theme-color" content="#07080b">
+<meta property="og:site_name" content="南屿">
+<meta property="og:type" content="website">
+<meta property="og:title" content="搜索 · 南屿">
+<meta property="og:description" content="搜索站内文章。">
+<meta property="og:image" content="https://xia0tou.github.io/assets/img/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="alternate" type="application/rss+xml" title="南屿" href="../rss.xml">
+<script src="../assets/js/posts-index.js" defer></script>
+</head>
+<body data-root="../">
+<div id="bg"><canvas id="bg-canvas"></canvas></div>
+
+<header class="site-header" id="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="../" aria-label="南屿 首页">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>南屿</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航"><a href="../">首页</a><a href="../blog/">文章</a><a href="../archives/">归档</a><a href="../links/">友链</a><a href="../about/">关于</a></nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="../search/" aria-label="搜索（按 / 键）" title="搜索 /">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      </a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.3M12 19.7V22M2 12h2.3M19.7 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4A8.6 8.6 0 1 1 10.6 3.4a7 7 0 0 0 10 10Z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="移动端导航"><a href="../">首页<span>01</span></a><a href="../blog/">文章<span>02</span></a><a href="../archives/">归档<span>03</span></a><a href="../links/">友链<span>04</span></a><a href="../about/">关于<span>05</span></a>
+    <a href="../search/">搜索<span>06</span></a>
+  </nav>
+</div>
+<div class="menu-backdrop" id="menu-backdrop"></div>
+<main class="wrap main">
+  <header class="page-head reveal">
+    <p class="eyebrow">Search</p>
+    <h1>搜索</h1>
+    <p class="page-desc">在 6 篇文章里找找看。</p>
+  </header>
+  <div class="search-box reveal">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+    <label class="sr-only" for="search-input">搜索文章</label>
+    <input id="search-input" type="search" placeholder="标题、标签或正文关键词…" autocomplete="off" spellcheck="false">
+    <kbd>/</kbd>
+  </div>
+  <p class="search-status" id="search-status" aria-live="polite"></p>
+  <div class="search-results post-list" id="search-results"></div>
+  <noscript><p class="empty">搜索需要启用 JavaScript。你也可以直接浏览 <a href="../archives/">归档</a>。</p></noscript>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> 南屿 · 记录思考，分享观点。</p>
+    <div class="footer-links">
+      <a href="../rss.xml">RSS</a>
+      <a href="https://github.com/xia0tou" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="../about/">关于</a>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script src="../assets/js/shader.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

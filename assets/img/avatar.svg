@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="南屿的头像">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="0.55" stop-color="#1b2450"/>
+      <stop offset="1" stop-color="#080d1c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffdfae" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#ffd79a" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#ffd79a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35589f"/>
+      <stop offset="1" stop-color="#18244c"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="1" y2="0.6">
+      <stop offset="0" stop-color="#22406f"/>
+      <stop offset="1" stop-color="#0f1834"/>
+    </linearGradient>
+    <linearGradient id="hill3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1a33"/>
+      <stop offset="1" stop-color="#060a16"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5fd3c0" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#7aa9ff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#5fd3c0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <clipPath id="circle">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#circle)">
+    <rect width="200" height="200" fill="url(#sky)"/>
+
+    <!-- 星 -->
+    <g fill="#e8f0ff">
+      <circle cx="42" cy="38" r="1.2" opacity="0.75"/>
+      <circle cx="64" cy="26" r="0.8" opacity="0.5"/>
+      <circle cx="150" cy="34" r="1" opacity="0.6"/>
+      <circle cx="170" cy="58" r="0.7" opacity="0.45"/>
+      <circle cx="30" cy="70" r="0.8" opacity="0.4"/>
+      <circle cx="88" cy="48" r="0.7" opacity="0.5"/>
+      <circle cx="120" cy="22" r="0.9" opacity="0.35"/>
+    </g>
+
+    <!-- 月亮 -->
+    <circle cx="128" cy="70" r="54" fill="url(#glow)"/>
+    <circle cx="128" cy="70" r="21" fill="#f7e5c6"/>
+    <circle cx="135" cy="63" r="18" fill="#f3dcb6" opacity="0.55"/>
+    <g fill="#dcc39a" opacity="0.35">
+      <circle cx="122" cy="76" r="3.2"/>
+      <circle cx="133" cy="80" r="2"/>
+      <circle cx="137" cy="64" r="2.6"/>
+    </g>
+
+    <!-- 远山 -->
+    <path d="M-10 138 L28 108 L52 124 L78 96 L106 128 L132 110 L160 132 L210 104 L210 210 L-10 210 Z"
+          fill="url(#hill1)" opacity="0.55"/>
+    <!-- 近山 -->
+    <path d="M-10 158 L30 132 L58 150 L88 122 L118 152 L146 134 L176 156 L210 142 L210 210 L-10 210 Z"
+          fill="url(#hill2)" opacity="0.9"/>
+    <!-- 水面 -->
+    <path d="M-10 172 C40 162 70 180 108 172 C140 165 170 176 210 166 L210 210 L-10 210 Z"
+          fill="url(#hill3)"/>
+    <g stroke="url(#water)" stroke-width="1.6" stroke-linecap="round" opacity="0.8">
+      <path d="M30 182 h34"/>
+      <path d="M78 189 h52"/>
+      <path d="M118 199 h40"/>
+      <path d="M46 197 h20"/>
+    </g>
+    <g fill="#9fc4ff" opacity="0.5">
+      <circle cx="168" cy="176" r="1.4"/>
+      <circle cx="176" cy="184" r="0.9"/>
+    </g>
+
+    <!-- 胶片颗粒 -->
+    <rect width="200" height="200" filter="url(#grain)" opacity="0.05" style="mix-blend-mode:overlay"/>
+  </g>
+</svg>

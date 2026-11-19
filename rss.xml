@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>南屿</title>
+    <link>https://xia0tou.github.io/</link>
+    <description>记录思考，分享观点。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 10 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://xia0tou.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>在城市的缝隙里，重新学会散步</title>
+      <link>https://xia0tou.github.io/blog/walk-in-the-city/</link>
+      <guid isPermaLink="true">https://xia0tou.github.io/blog/walk-in-the-city/</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <description>去年冬天，我给自己定了一个奇怪的规矩：每周至少有一次，不带目的地上街走两个小时。</description>
+      <category>生活</category>
+      <category>随笔</category>
+    </item>
+    <item>
+      <title>写给二十五岁的自己</title>
+      <link>https://xia0tou.github.io/blog/letter-to-25/</link>
+      <guid isPermaLink="true">https://xia0tou.github.io/blog/letter-to-25/</guid>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <description>二十五岁生日那天，我在便利店买了一个三角饭团，坐在路边的台阶上吃完。没有蛋糕，也没有许愿。</description>
+      <category>随笔</category>
+      <category>成长</category>
+    </item>
+    <item>
+      <title>我的工具箱：2026 年还在用的九个工具</title>
+      <link>https://xia0tou.github.io/blog/my-toolbox-2026/</link>
+      <guid isPermaLink="true">https://xia0tou.github.io/blog/my-toolbox-2026/</guid>
+      <pubDate>Fri, 18 Sep 2026 12:00:00 GMT</pubDate>
+      <description>这个清单每年都在缩短。不是因为工具变少了，而是因为我越来越懒得折腾。</description>
+      <category>工具</category>
+      <category>效率</category>
+    </item>
+    <item>
+      <title>第一次做独立开发，我踩过的七个坑</title>
+      <link>https://xia0tou.github.io/blog/independent-dev-lessons/</link>
+      <guid isPermaLink="true">https://xia0tou.github.io/blog/independent-dev-lessons/</guid>
+      <pubDate>Fri, 21 Aug 2026 12:00:00 GMT</pubDate>
+      <description>上线三个月，赚的钱不够付服务器，但学到了比钱更值钱的东西。</description>
+      <category>开发</category>
+      <category>复盘</category>
+    </item>
+    <item>
+      <title>深夜食堂与一碗面的意义</title>
+      <link>https://xia0tou.github.io/blog/night-noodles/</link>
+      <guid isPermaLink="true">https://xia0tou.github.io/blog/night-noodles/</guid>
+      <pubDate>Thu, 30 Jul 2026 12:00:00 GMT</pubDate>
+      <description>楼下那家面馆凌晨两点还亮着灯。老板话不多，但记得每个人不要葱还是不要香菜。</description>
+      <category>生活</category>
+    </item>
+    <item>
+      <title>春天结束之前</title>
+      <link>https://xia0tou.github.io/blog/spring-before-end/</link>
+      <guid isPermaLink="true">https://xia0tou.github.io/blog/spring-before-end/</guid>
+      <pubDate>Mon, 04 May 2026 12:00:00 GMT</pubDate>
+      <description>春天结束得没有声音。某天早上醒来，风的味道变了。</description>
+      <category>随笔</category>
+    </item>
+  </channel>
+</rss>

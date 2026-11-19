@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t="dark";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南屿 · 记录思考，分享观点。</title>
+<meta name="description" content="南屿的个人博客，记录思考，分享观点。">
+<meta name="author" content="阿南">
+<meta name="theme-color" content="#07080b">
+<meta property="og:site_name" content="南屿">
+<meta property="og:type" content="website">
+<meta property="og:title" content="南屿 · 记录思考，分享观点。">
+<meta property="og:description" content="南屿的个人博客，记录思考，分享观点。">
+<meta property="og:image" content="https://xia0tou.github.io/assets/img/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="alternate" type="application/rss+xml" title="南屿" href="rss.xml">
+
+</head>
+<body data-root="">
+<div id="bg"><canvas id="bg-canvas"></canvas></div>
+
+<header class="site-header" id="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="" aria-label="南屿 首页">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>南屿</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航"><a href="" aria-current="page">首页</a><a href="blog/">文章</a><a href="archives/">归档</a><a href="links/">友链</a><a href="about/">关于</a></nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="search/" aria-label="搜索（按 / 键）" title="搜索 /">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      </a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.3M12 19.7V22M2 12h2.3M19.7 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4A8.6 8.6 0 1 1 10.6 3.4a7 7 0 0 0 10 10Z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="移动端导航"><a href="" aria-current="page">首页<span>01</span></a><a href="blog/">文章<span>02</span></a><a href="archives/">归档<span>03</span></a><a href="links/">友链<span>04</span></a><a href="about/">关于<span>05</span></a>
+    <a href="search/">搜索<span>06</span></a>
+  </nav>
+</div>
+<div class="menu-backdrop" id="menu-backdrop"></div>
+<main class="wrap main">
+  <section class="hero reveal">
+    <div class="avatar-ring"><img src="assets/img/avatar.svg" alt="阿南的头像" width="96" height="96"></div>
+    <h1>阿南</h1>
+    <p class="hero-tagline">个人博客 · 记录思考，分享观点。</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://github.com/xia0tou" target="_blank" rel="noopener noreferrer">
+        <svg class="solid" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+      <a class="btn" href="rss.xml">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.2"/></svg>
+        RSS 订阅
+      </a>
+    </div>
+  </section>
+
+  <section class="card about-card reveal">
+    <h2 class="eyebrow">关于</h2>
+    <p><strong>你好，我是阿南。</strong>白天写代码，晚上写字。这里放一些关于生活、产品和自我观察的碎片，偶尔也写点技术。不追热点，只写自己真正想过的事。</p>
+    <a class="text-link" href="about/">更多关于我 <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="card now reveal">
+    <h2 class="eyebrow">现在</h2>
+    <ul class="now-list">
+      <li><span class="now-key">在写</span><span>一组关于城市与散步的随笔</span></li>
+      <li><span class="now-key">在读</span><span>《小于一》· 布罗茨基</span></li>
+      <li><span class="now-key">在听</span><span>坂本龙一 · async</span></li>
+    </ul>
+  </section>
+
+  <section class="reveal">
+    <div class="section-head">
+      <h2>最近文章</h2>
+      <a class="more" href="blog/">全部文章 <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="post-list"><a class="post-item" href="blog/walk-in-the-city/" data-tags="生活,随笔">
+  <time datetime="2026-11-10">2026.11.10</time>
+  <h3>在城市的缝隙里，重新学会散步</h3>
+  <p>去年冬天，我给自己定了一个奇怪的规矩：每周至少有一次，不带目的地上街走两个小时。</p>
+  
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+<a class="post-item" href="blog/letter-to-25/" data-tags="随笔,成长">
+  <time datetime="2026-10-02">2026.10.02</time>
+  <h3>写给二十五岁的自己</h3>
+  <p>二十五岁生日那天，我在便利店买了一个三角饭团，坐在路边的台阶上吃完。没有蛋糕，也没有许愿。</p>
+  
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+<a class="post-item" href="blog/my-toolbox-2026/" data-tags="工具,效率">
+  <time datetime="2026-09-18">2026.09.18</time>
+  <h3>我的工具箱：2026 年还在用的九个工具</h3>
+  <p>这个清单每年都在缩短。不是因为工具变少了，而是因为我越来越懒得折腾。</p>
+  
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+<a class="post-item" href="blog/independent-dev-lessons/" data-tags="开发,复盘">
+  <time datetime="2026-08-21">2026.08.21</time>
+  <h3>第一次做独立开发，我踩过的七个坑</h3>
+  <p>上线三个月，赚的钱不够付服务器，但学到了比钱更值钱的东西。</p>
+  
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+<a class="post-item" href="blog/night-noodles/" data-tags="生活">
+  <time datetime="2026-07-30">2026.07.30</time>
+  <h3>深夜食堂与一碗面的意义</h3>
+  <p>楼下那家面馆凌晨两点还亮着灯。老板话不多，但记得每个人不要葱还是不要香菜。</p>
+  
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a></div>
+  </section>
+
+  <section class="reveal" style="margin-top:54px">
+    <p style="color:var(--faint);font-size:12.5px;line-height:1.9">
+      本站使用纯静态页面，没有广告、没有追踪脚本。<br>
+      如果愿意，可以用 <a class="text-link" style="margin:0" href="rss.xml">RSS</a> 订阅这里的更新。
+    </p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> 南屿 · 记录思考，分享观点。</p>
+    <div class="footer-links">
+      <a href="rss.xml">RSS</a>
+      <a href="https://github.com/xia0tou" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="about/">关于</a>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script src="assets/js/shader.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

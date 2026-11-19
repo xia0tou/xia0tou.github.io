@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    background: #07080b;
+    color: #e8eaf0;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  }
+  .bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(60% 70% at 12% 18%, rgba(48, 88, 190, 0.55), transparent 62%),
+      radial-gradient(55% 60% at 88% 78%, rgba(112, 62, 180, 0.45), transparent 65%),
+      radial-gradient(50% 55% at 70% 8%, rgba(24, 120, 120, 0.28), transparent 70%),
+      linear-gradient(160deg, #0a0d18, #07080b 55%, #0b0810);
+  }
+  .grain {
+    position: absolute; inset: 0; opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .vignette {
+    position: absolute; inset: 0;
+    background: radial-gradient(120% 100% at 50% 50%, transparent 45%, rgba(4, 5, 8, 0.75) 100%);
+  }
+  .inner {
+    position: relative;
+    height: 100%;
+    padding: 66px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; font-size: 20px; letter-spacing: 0.34em; color: #c9d2e4; }
+  .mark {
+    width: 22px; height: 22px; border-radius: 7px; transform: rotate(14deg);
+    background: conic-gradient(from 200deg, #85aaff, #b79dff, #5ed6b4, #85aaff);
+    box-shadow: 0 0 26px rgba(133, 170, 255, 0.7);
+  }
+  .main { display: flex; align-items: center; justify-content: center; width: 100%; gap: 96px; }
+  .text h1 {
+    font-size: 92px; line-height: 1.1; letter-spacing: 0.06em; font-weight: 650;
+    background: linear-gradient(100deg, #ffffff 20%, #bcd0ff 60%, #cbb6ff 95%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .text p { margin-top: 22px; font-size: 27px; letter-spacing: 0.12em; color: #9aa6bb; }
+  .avatar {
+    position: relative; width: 240px; height: 240px; border-radius: 50%;
+    padding: 4px;
+    background: conic-gradient(from 150deg, #85aaff, #b79dff 40%, #5ed6b4 70%, #85aaff);
+    box-shadow: 0 0 90px rgba(133, 170, 255, 0.28);
+    flex: 0 0 auto;
+  }
+  .avatar img {
+    width: 100%; height: 100%; border-radius: 50%; display: block;
+    border: 6px solid #080a12; object-fit: cover;
+  }
+  .foot {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 18px; letter-spacing: 0.16em; color: #7e889c;
+  }
+  .foot .url { font-family: Consolas, monospace; letter-spacing: 0.06em; }
+  .rule { height: 1px; background: linear-gradient(90deg, rgba(255,255,255,0.16), transparent); margin-bottom: 26px; }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="vignette"></div>
+  <div class="grain"></div>
+  <div class="inner">
+    <div class="brand"><span class="mark"></span> 南屿</div>
+    <div class="main">
+      <div class="text">
+        <h1>阿南</h1>
+        <p>记录思考，分享观点。</p>
+      </div>
+      <div class="avatar"><img src="../assets/img/avatar.svg" alt=""></div>
+    </div>
+    <div>
+      <div class="rule"></div>
+      <div class="foot">
+        <span>个人博客 · 文章 / 归档 / 友链</span>
+        <span class="url">NANYU</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
